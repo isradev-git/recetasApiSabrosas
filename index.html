@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" defer></script>
+    <title>Recetas API</title>
+</head>
+
+<body>
+    <header>
+        <h1>Recetas APIsabrosas</h1>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="meal-wrapper">
+                    <div class="meal-search">
+                        <h2 class="title">Encuentra Recetas para tus ingredientes</h2>
+                        <blockquote>El tomate y el orégano lo hacen italiano; el vino y el estragón lo hacen francés, la salsa de soya lo hace chino; el ajo lo hace bueno.<br>
+                            <cite><b>Alice May Brock</b></cite>
+                        </blockquote>
+
+                        <div class="meal-search-box">
+                            <input type="text" class="search-control" placeholder="Añade un ingrediente (En inglés)"
+                                id="search-input">
+                            <button type="submit" class="search-btn btn" id="search-btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="meal-result">
+                        <h2 class="title">Los resultados de tu búsqueda:</h2>
+                        <div id="meal">
+                            <!-- Meal item -->
+                            <!-- <div class="meal-item">
+                                <div class="meal-img">
+                                    <img src="./img/patatas-fritas.jpg" alt="foto de la receta">
+                                </div>
+                                <div class="meal-name">
+                                    <h3>Potato Chips</h3>
+                                    <a href="" class="recipe-btn">Get Recipe</a>
+                                </div>
+                            </div> -->
+                            <!-- End of Meal item -->
+                        </div>
+                    </div>
+
+                    <div class="meal-details">
+                        <!-- recipe close btn -->
+                        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+
+                        <!-- meal content -->
+                        <div class="meal-details-content">
+                            <!-- <h2 class="recipe-title">Meals Name Here</h2>
+                            <p class="recipe-category">Category Name</p>
+                            <div class="recipe-instruct">
+                                <h3>Intructions</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolor, perspiciatis rem veritatis consequatur voluptatum, adipisci repudiandae eum alias laudantium odio veniam. Magni dolor commodi eligendi accusantium, debitis laboriosam cum!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quo consectetur facere laborum odit dicta maxime magni architecto amet, ducimus animi veritatis! Impedit quisquam molestias obcaecati adipisci perspiciatis labore tempora.</p>
+                            </div>
+                            <div class="recipe-meal-img">
+                                <img src="./img/patatas-fritas.jpg" alt="">
+                            </div>
+                            <div class="recipe-link">
+                                <a href="#" target="_blank">Watch Video</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
