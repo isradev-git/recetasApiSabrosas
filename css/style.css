@@ -51,7 +51,7 @@ header {
 
 
 .container {
-    min-width: 100vh;
+    /* min-width: 100vh; */
     display: flex;
     flex-direction: column;
 }
@@ -286,6 +286,6 @@ header {
         font-size: 4rem;
     }
     .search-control{
-        width:50%;
+        width:100%;
     }
 }
