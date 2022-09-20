@@ -27,6 +27,7 @@ body {
 /* Configuraciones previas*/
 h1 {
     font-size: 7rem;
+    text-align: center;
 }
 .btn {
     cursor: pointer;
@@ -51,13 +52,17 @@ header {
 
 .container {
     min-width: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .meal-wrapper  {
-    max-width: 1280px;
+    /* max-width: 1280px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
     padding: 2rem;
     background: var(--bg);
-    text-align: center;
 }
 .meal-search {
     margin: 2rem 0;
@@ -249,6 +254,7 @@ header {
 
 
 
+
 /* Media Queries */
 @media screen  and (min-width: 600px) {
     .meal-search-box {
@@ -273,5 +279,13 @@ header {
 @media screen and (min-width: 992px) {
     #meal {
         grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width: 480px){
+    h1 {
+        font-size: 4rem;
+    }
+    .search-control{
+        width:50%;
     }
 }
