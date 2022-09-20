@@ -28,6 +28,7 @@ body {
 h1 {
     font-size: 7rem;
     text-align: center;
+    color: var(--tenne-tawny-dark);
 }
 .btn {
     cursor: pointer;
@@ -131,6 +132,7 @@ header {
 }
 .recipe-btn {
     text-decoration: none;
+    text-align: center;
     color: var(--bg);
     background: var(--tenne-tawny);
     font-weight: 500;
@@ -228,6 +230,7 @@ header {
     display: block;
 }
 .recipe-link {
+    text-align: center;
     margin: 1.4rem 0;
 }
 .recipe-link a{
