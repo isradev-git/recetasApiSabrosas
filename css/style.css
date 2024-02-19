@@ -25,10 +25,19 @@ body {
 }
 
 /* Configuraciones previas*/
+p {
+    font-size: 20px;
+}
 h1 {
     font-size: 7rem;
     text-align: center;
     color: var(--tenne-tawny-dark);
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    text-align: center;
 }
 .btn {
     cursor: pointer;
@@ -163,6 +172,15 @@ header {
     overflow-y: scroll;
     display: none;
     padding: 2rem 0;
+
+    /* Nuevos estilos para dispositivos móviles */
+    @media screen and (max-width: 767px) {
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        height: 100%;
+    }
 }
 .meal-details::-webkit-scrollbar {
     width: 20px;
@@ -223,8 +241,8 @@ header {
     padding: 1rem 0;
 }
 .recipe-meal-img img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin: 0 auto;
     display: block;
@@ -269,19 +287,20 @@ header {
 @media screen and (min-width: 768px) {
     #meal {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
         gap: 2rem;
     }
     .meal-item {
         margin: 0;
     }
     .meal-details {
-        width: 700px;
+        width: 80%;
     }
 }
+
 @media screen and (min-width: 992px) {
     #meal {
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(5,1fr);
     }
 }
 @media (max-width: 480px){
